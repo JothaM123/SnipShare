@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnipShare</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase-database.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/4.0.16/marked.min.js" integrity="sha512-8d9aScHpB0kf4+i5O3JlEP6VfvvjYYyZXa71ZKq0CzytOfDcH8d4Iej33s/0nNDcqWHhdDuAZKjA2y2qXzvJZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/atom-one-dark.min.css" integrity="sha512-Jk4AqjWsdSzSWCSuQTfYRIF84Rq/eV0G2+tu07byYwHcbTGfdmLrHjUSwvzp5HvbiqK4ibmNwdcG49Y5RGYPTg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js" integrity="sha512-Pbb8o120v5/hN/a6LjF4N4Lxou+xYZ0QcVF8J6TWhBbHmctQWd8O6xTDmHpE/91OjPzCk4JRoiJsexHYg4SotQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>  
+    const firebaseConfig = {
+        apiKey: "AIzaSyA3qi0OMGSiBPY4f6bhoh_pZAfEa_Pxk90",
+        authDomain: "snipshare-official.firebaseapp.com",
+        projectId: "snipshare-official",
+        storageBucket: "snipshare-official.appspot.com",
+        messagingSenderId: "318129186562",
+        appId: "1:318129186562:web:1e882d15ca6be9beafc41b"
+      };
+    
+      firebase.initializeApp(firebaseConfig);</script>
+    
+</head>
+<body>
+    <h1>SnipShare • the code snippet bank</h1>
+    <div id = "content"></div>
+    <div id ="main">
+    <input id = "username" placeholder="Username">
+    <br><br>
+    <textarea id ="inputcode" placeholder="Code"></textarea>
+    <button onclick = "share()">Share</button>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>
